@@ -1,6 +1,6 @@
 <template>
-    <div id="app">
-        <h1>Webpack budle vue</h1>
+    <div>
+        <h1>Webpack budle 123</h1>
         <div class="test">
             <p>{{ msg }}</p>
         </div>
@@ -15,7 +15,7 @@ export default {
     name: 'app',
     data: function() {
     return {
-            msg: 'this is msg'
+            msg: 'this is s'
         }
     },
     created: function() {

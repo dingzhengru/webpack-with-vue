@@ -76,7 +76,8 @@ import 'style.scss'
 }
 ```
 
-## server (webpack-dev-middleware & express)
+## server (webpack-dev-middleware & express or webpack-dev-server)
+### webpack-dev-middleware & express
 ```npm install --save-dev webpack-dev-middleware express```  
 
 **webpack.config.js**  
@@ -115,3 +116,19 @@ app.listen(3000, function () {
 ```sciprt:{ "serve": "node server.js" }```  
 
 **serve**```npm run serve``` or ```node server.js```
+
+## webpack-dev-server
+```npm install --save-dev webpack-dev-server```  
+webpack.config.js  
+```
+devServer: {
+    contentBase: './dist'
+},
+```
+package.json  
+```
+"scripts": {
+    "start": "webpack-dev-server --open",
+}
+```
+執行```npm start```
