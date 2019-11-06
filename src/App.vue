@@ -1,7 +1,9 @@
 <template>
     <div id="app">
         <h1>Webpack budle vue</h1>
-        <p>{{ msg }}</p>
+        <div class="test">
+            <p>{{ msg }}</p>
+        </div>
     </div>
 </template>
 
@@ -29,6 +31,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+$test-color: red;
+
+.test {
+    color: $test-color;
+}
+
 
 </style>

@@ -8,7 +8,12 @@ module.exports = {
     entry: './src/main.js',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: './'
+    },
+    devServer: {
+        contentBase: './dist',
+        hot: true
     },
     plugins: [
         new VueLoaderPlugin()
